@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Rehman Veterinary Clinic - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN for professional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWpW4EBPd0V3eF+oHkI7L/t1Jt7KjL5oV2K3Rk5c5hPzD3xPzWdGgG3sA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .hero-section {
+            background-image: url('https://images.pexels.com/photos/4056461/pexels-photo-4056461.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            height: 90vh;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .container-section {
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2.5rem;
+        }
+        .card {
+            background-color: #f9fafb;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fixed Header/Navigation Bar -->
+    <nav class="fixed w-full top-0 left-0 bg-white shadow-md z-50 py-4 px-6 md:px-12 transition-all duration-300">
+        <!-- Center: Clinic Title (Hata diya gaya) -->
+        <!-- Right Side: Navigation Menu (Hata diya gaya) -->
+    </nav>
+    
+    <!-- Header & Hero Section (with top margin to account for fixed nav) -->
+    <header class="hero-section flex flex-col justify-between text-white text-center pt-24 md:pt-32">
+        <div class="overlay"></div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 p-6 md:p-12 mb-auto flex-grow flex items-center justify-center text-center">
+            <div class="max-w-4xl">
+                <!-- Inline style added to force the color to white -->
+                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-4 text-center" style="color: white !important;">Your Partner in <br> Pet Care</h1>
+                <p class="text-xl md:text-2xl font-light max-w-2xl mb-8 text-center mx-auto">
+                    Providing compassionate and expert care for your beloved animals with a commitment to their health and well-being.
+                </p>
+                <a href="#contact" class="inline-block px-10 py-4 bg-teal-500 text-white font-semibold rounded-full shadow-lg hover:bg-teal-600 transition-colors duration-300 transform hover:scale-105">
+                    Schedule an Appointment Today!
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 md:py-16">
+
+        <!-- Our Commitment Section (NEWLY ADDED) -->
+        <section class="container-section">
+            <h2 class="text-4xl font-bold text-center mb-8 text-blue-800">Our Commitment to Your Pet’s Well-being</h2>
+            <p class="text-lg leading-relaxed text-gray-700 text-center mx-auto max-w-3xl">
+                At AL-Rehman Veterinary Clinic, we are dedicated to providing the highest quality medical care for your beloved animals. Our experienced team uses advanced techniques and a compassionate approach to ensure every pet receives personalized attention and treatment. From routine check-ups to complex surgeries, we are here to support you and your furry family members at every stage of their lives. Your pet’s health is our top priority.
+            </p>
+        </section>
+        
+        <!-- About Us Section -->
+        <section id="about" class="container-section">
+            <h2 class="text-4xl font-bold text-center mb-12 text-blue-800">About Our Clinic</h2>
+            <div class="text-lg leading-relaxed text-gray-700 text-center mx-auto max-w-2xl">
+                <p class="mb-4">
+                    Al Rehman Veterinary Clinic, established in 2024, is dedicated to providing the highest quality veterinary care for your beloved pets. We have been serving the Lahore community with a commitment to excellence.
+                </p>
+                <p>
+                    We understand that your pet is a part of your family, and we treat every patient with the same love and attention we would our own. Our state-of-the-art facility is equipped with the latest technology to provide comprehensive care, from routine check-ups to advanced medical procedures.
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="container-section">
+            <h2 class="text-4xl font-bold text-center mb-12 text-blue-800">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card flex flex-col items-center text-center">
+                    <!-- Updated Icon for Preventative Care -->
+                    <div class="text-blue-500 w-16 h-16 mb-4 flex items-center justify-center">
+                        <i class="fa-solid fa-shield-heart text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2 text-blue-800">Preventative Care</h3>
+                    <p class="text-gray-700">Regular check-ups and wellness exams are key to a long and healthy life. We offer comprehensive wellness exams, vaccinations, parasite prevention, and nutritional counseling.</p>
+                </div>
+                <div class="card flex flex-col items-center text-center">
+                    <!-- Updated Icon for Surgery -->
+                    <div class="text-green-500 w-16 h-16 mb-4 flex items-center justify-center">
+                        <i class="fa-solid fa-stethoscope text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2 text-blue-800">Surgery</h3>
+                    <p class="text-gray-700">Our surgical suite is equipped for both routine and advanced procedures. Our team prioritizes safety, pain management, and a smooth recovery for every patient.</p>
+                </div>
+                <div class="card flex flex-col items-center text-center">
+                    <!-- Updated Icon for Dental Care -->
+                    <div class="text-yellow-500 w-16 h-16 mb-4 flex items-center justify-center">
+                        <i class="fa-solid fa-tooth text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2 text-blue-800">Dental Care</h3>
+                    <p class="text-gray-700">Proper dental hygiene is crucial. We provide professional teeth cleaning, polishing, and dental extractions to prevent and treat oral diseases.</p>
+                </div>
+                <div class="card flex flex-col items-center text-center">
+                    <!-- Updated Icon for Diagnostics -->
+                    <div class="text-purple-500 w-16 h-16 mb-4 flex items-center justify-center">
+                        <i class="fa-solid fa-microscope text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2 text-blue-800">Diagnostics</h3>
+                    <p class="text-gray-700">With in-house lab work and advanced digital X-ray technology, we can quickly and accurately diagnose medical conditions to begin treatment as soon as possible.</p>
+                </div>
+                <div class="card flex flex-col items-center text-center">
+                    <!-- Updated Icon for Livestock Farming -->
+                    <div class="text-red-500 w-16 h-16 mb-4 flex items-center justify-center">
+                        <i class="fa-solid fa-cow text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2 text-blue-800">Livestock Farming</h3>
+                    <p class="text-gray-700">We offer expert veterinary services for livestock, including health management, disease prevention, and nutritional guidance to ensure the productivity and well-being of your farm animals.</p>
+                </div>
+                <div class="card flex flex-col items-center text-center">
+                    <!-- Updated Icon for Artificial Insemination -->
+                    <div class="text-orange-500 w-16 h-16 mb-4 flex items-center justify-center">
+                        <i class="fa-solid fa-seedling text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2 text-blue-800">Artificial Insemination</h3>
+                    <p class="text-gray-700">Our clinic provides professional artificial insemination services to help improve the genetic quality and breeding efficiency of your livestock.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Team Section -->
+        <section id="team" class="container-section">
+            <h2 class="text-4xl font-bold text-center mb-12 text-blue-800">Our Dedicated Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card flex flex-col items-center text-center">
+                    <!-- Doctor icon for Dr. Muhammad Habib Ullah -->
+                    <div class="text-blue-600 w-36 h-36 flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-user-doctor text-7xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-blue-800">Dr. Muhammad Habib Ullah</h3>
+                    <p class="text-lg font-medium text-blue-600 mb-2">Vet Surgeon (DVM) RVMP</p>
+                    <p class="text-gray-700 leading-relaxed max-w-lg">
+                        Dr. Muhammad Habib Ullah, our dedicated Veterinary Surgeon, holds a Doctor of Veterinary Medicine (DVM) degree and is registered with the RVMP. With a passion for animal welfare, he specializes in both general and advanced surgical procedures, ensuring the health and well-being of every patient.
+                    </p>
+                </div>
+                <div class="card flex flex-col items-center text-center">
+                    <!-- Nurse icon for Muhammad Basit -->
+                    <div class="text-blue-600 w-36 h-36 flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-user-nurse text-7xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-blue-800">Muhammad Basit</h3>
+                    <p class="text-lg font-medium text-blue-600 mb-2">Technician</p>
+                    <p class="text-gray-700 leading-relaxed max-w-lg">
+                        Muhammad Basit is our skilled veterinary technician, providing essential support in all aspects of our clinic's operations. His expertise in assisting with medical procedures, managing clinic equipment, and ensuring a safe environment for all animals is invaluable.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="container-section">
+            <h2 class="text-4xl font-bold text-center mb-12 text-blue-800">Contact Us</h2>
+            
+            <!-- Contact Info -->
+            <div class="space-y-6 max-w-2xl mx-auto">
+                <h3 class="text-2xl font-semibold mb-4 text-gray-800 text-center">Get in Touch</h3>
+                <div class="flex items-start space-x-4">
+                    <div class="text-blue-500 w-8 h-8 flex-shrink-0 mt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 4.148-7.5 7.5-7.5 7.5S4.5 14.648 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-gray-700">Address</p>
+                        <p class="text-gray-700">Kahna Nau Ferozpur Road Lahore</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="text-blue-500 w-8 h-8 flex-shrink-0 mt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75a60.057 60.057 0 0 1 1.096-.328C3.765 6.425 4.5 6.51 5.25 6.75H12a2.25 2.25 0 0 1 2.25 2.25v2.25m-10.5-5.25v8.25a2.25 2.25 0 0 0 2.25 2.25h12.375c.677 0 1.32-.093 1.933-.263m-12.75-8.25V18a2.25 2.25 0 0 0 2.25 2.25h12.375a2.25 2.25 0 0 0 2.25-2.25v-8.25m-14.25 0h.008v.008h-.008Z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-gray-700">Email</p>
+                        <a href="mailto:sanaullahtalpur616@gmail.com" class="text-gray-700 hover:underline">sanaullahtalpur616@gmail.com</a>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="text-blue-500 w-8 h-8 flex-shrink-0 mt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75a60.057 60.057 0 0 1 1.096-.328C3.765 6.425 4.5 6.51 5.25 6.75H12a2.25 2.25 0 0 1 2.25 2.25v2.25m-10.5-5.25v8.25a2.25 2.25 0 0 0 2.25 2.25h12.375c.677 0 1.32-.093 1.933-.263m-12.75-8.25V18a2.25 2.25 0 0 0 2.25 2.25h12.375a2.25 2.25 0 0 0 2.25-2.25v-8.25m-14.25 0h.008v.008h-.008Z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-gray-700">Phone & WhatsApp</p>
+                        <a href="tel:+923091014060" class="text-gray-700 hover:underline">03091014060</a>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="text-blue-500 w-8 h-8 flex-shrink-0 mt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-gray-700">Hours</p>
+                        <p class="text-gray-700">9:00 am to 10:00 pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Map Embed -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-semibold mb-4 text-blue-800 text-center">Visit Us</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.4962295679313!2d74.34110307455822!3d31.52040058988514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905663673df47%3A0x1d36551b8c8d5516!2sKahna%20Nau%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2sin!v1701389650424!5m2!1sen!2sin" class="w-full h-80 rounded-xl border border-gray-300 shadow-md" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="mt-12 max-w-2xl mx-auto">
+                <h3 class="text-2xl font-semibold mb-4 text-blue-800 text-center">Send us a message</h3>
+                <form action="mailto:sanaullahtalpur616@gmail.com" method="post" enctype="text/plain" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-gray-700 font-medium">Your Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-shadow duration-200" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 font-medium">Your Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-shadow duration-200" required>
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-gray-700 font-medium">Subject</label>
+                        <input type="text" id="subject" name="subject" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-shadow duration-200" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700 font-medium">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-shadow duration-200" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors duration-300 transform hover:scale-105 shadow-md">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <!-- Column 1: Clinic Info -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4 text-white">Al Rehman Veterinary Clinic</h3>
+                <p class="text-gray-400 mb-4">
+                    Providing compassionate and expert care for your beloved animals with a commitment to their health and well-being.
+                </p>
+                <div class="flex items-center justify-center md:justify-start space-x-3 text-gray-400">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Kahna Nau Ferozpur Road Lahore</span>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="mt-8 md:mt-0">
+                <h3 class="text-xl font-semibold mb-4 text-white">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-blue-400 transition-colors">Home</a></li>
+                    <li><a href="#about" class="hover:text-blue-400 transition-colors">About Us</a></li>
+                    <li><a href="#services" class="hover:text-blue-400 transition-colors">Our Services</a></li>
+                    <li><a href="#team" class="hover:text-blue-400 transition-colors">Our Team</a></li>
+                    <li><a href="#contact" class="hover:text-blue-400 transition-colors">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Contact & Social -->
+            <div class="mt-8 md:mt-0">
+                <h3 class="text-xl font-semibold mb-4 text-white text-center">Contact & Social</h3>
+                <div class="space-y-2 mb-4 text-center">
+                    <div class="flex items-center justify-center space-x-3">
+                        <i class="fa-solid fa-envelope text-blue-400"></i>
+                        <a href="mailto:sanaullahtalpur616@gmail.com" class="hover:text-blue-400 transition-colors">sanaullahtalpur616@gmail.com</a>
+                    </div>
+                    <div class="flex items-center justify-center space-x-3">
+                        <i class="fa-solid fa-phone text-blue-400"></i>
+                        <a href="tel:+923091014060" class="hover:text-blue-400 transition-colors">03091014060</a>
+                    </div>
+                </div>
+                <div class="flex justify-center space-x-6 mt-4">
+                    <a href="#" class="text-2xl hover:text-blue-400 transition-colors"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-2xl hover:text-blue-400 transition-colors"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-2xl hover:text-blue-400 transition-colors"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-500 text-sm">
+            <p>&copy; 2024 Al Rehman Veterinary Clinic. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Floating WhatsApp Icon -->
+    <a href="https://wa.me/923091014060" class="fixed bottom-6 right-6 z-50 p-4 bg-green-500 text-white rounded-full shadow-lg transition-all duration-300 transform hover:scale-110" target="_blank">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - AL-Rehman Veterinary Clinic</title>
+    <!-- Tailwind CSS CDN load karen -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter font load karen -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .container-section {
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2.5rem;
+        }
+        .card {
+            background-color: #f9fafb;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Our Team Section -->
+    <section class="py-16 px-4 md:px-8">
+        <div class="max-w-5xl mx-auto container-section">
+            <h2 class="text-4xl font-bold text-center mb-12 text-blue-800">Our Dedicated Team</h2>
+            
+            <!-- Team Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-8">
+
+                <!-- Team Member 1 -->
+                <div class="card flex flex-col items-center text-center">
+                    <div class="text-blue-600 w-36 h-36 flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-user-doctor text-7xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-blue-800">Dr. Muhammad Habib Ullah Talpur</h3>
+                    <p class="text-lg font-semibold text-gray-700 mb-1">DVM RVMP</p>
+                    <p class="text-gray-500 max-w-lg mx-auto">
+                        Dr. Muhammad Habib Ullah, our dedicated Veterinary Surgeon, holds a Doctor of Veterinary Medicine (DVM) degree and is registered with the RVMP. With a passion for animal welfare, he specializes in both general and advanced surgical procedures, ensuring the health and well-being of every patient.
+                    </p>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="card flex flex-col items-center text-center">
+                    <div class="text-blue-600 w-36 h-36 flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-user-nurse text-7xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-blue-800">Muhammad Basit</h3>
+                    <p class="text-lg font-semibold text-gray-700 mb-1">Certified Vet Technician</p>
+                    <p class="text-gray-500 max-w-lg mx-auto">
+                        Muhammad Basit is our skilled veterinary technician, providing essential support in all aspects of our clinic's operations. His expertise in assisting with medical procedures, managing clinic equipment, and ensuring a safe environment for all animals is invaluable.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <!-- Column 1: Clinic Info -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4 text-white">Al Rehman Veterinary Clinic</h3>
+                <p class="text-gray-400 mb-4">
+                    Providing compassionate and expert care for your beloved animals with a commitment to their health and well-being.
+                </p>
+                <div class="flex items-center justify-center md:justify-start space-x-3 text-gray-400">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Kahna Nau Ferozpur Road Lahore</span>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="mt-8 md:mt-0">
+                <h3 class="text-xl font-semibold mb-4 text-white">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-blue-400 transition-colors">About Us</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition-colors">Our Services</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition-colors">Our Team</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition-colors">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Contact & Social -->
+            <div class="mt-8 md:mt-0">
+                <h3 class="text-xl font-semibold mb-4 text-white">Contact & Social</h3>
+                <div class="space-y-2 mb-4">
+                    <div class="flex items-center justify-center md:justify-start space-x-3">
+                        <i class="fa-solid fa-envelope text-blue-400"></i>
+                        <a href="mailto:sanaullahtalpur616@gmail.com" class="hover:text-blue-400 transition-colors">sanaullahtalpur616@gmail.com</a>
+                    </div>
+                    <div class="flex items-center justify-center md:justify-start space-x-3">
+                        <i class="fa-solid fa-phone text-blue-400"></i>
+                        <a href="tel:+923091014060" class="hover:text-blue-400 transition-colors">03091014060</a>
+                    </div>
+                </div>
+                <div class="flex justify-center md:justify-start space-x-6 mt-4">
+                    <a href="#" class="text-2xl hover:text-blue-400 transition-colors"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-2xl hover:text-blue-400 transition-colors"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-2xl hover:text-blue-400 transition-colors"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-500 text-sm">
+            <p>&copy; 2024 Al Rehman Veterinary Clinic. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
